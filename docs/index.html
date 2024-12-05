@@ -10,12 +10,23 @@
         h1 {
             font-family: 'Patrick Hand', cursive;
         }
+
+        /* Override the background color and text color of the active accordion button */
+        .accordion-button:not(.collapsed) {
+            background-color: #0dcaf0;
+            color: #fff;
+        }
+
+        /* Optionally, adjust the icon color */
+        .accordion-button:not(.collapsed)::after {
+            filter: brightness(0) invert(1);
+        }
     </style>
 </head>
 <body>
 <header class="bg-light text-center py-4">
     <div class="container">
-        <img src="public/kinder.jpg" alt="Krabbelgruppe Banner" class="img-fluid mb-3">
+        <img src="public/kinder_gen.png" alt="Krabbelgruppe Banner" class="img-fluid mb-3">
         <h1>Krabbelgruppe Toffen</h1>
         <p class="lead">Kinder entdecken ihre Welt</p>
     </div>
@@ -25,7 +36,7 @@
     <section class="mb-5">
         <h2>Über uns</h2>
         <p>
-            Wir bieten den Rahmen, der Eltern, Babys & Kleinkindern gefällt!<br />
+            Wir bieten den Rahmen, der Eltern, Babys & Kleinkindern gefällt!<br/>
             Während die Kinder spielen, besteht für die Eltern die Möglichkeit,
             sich bei Kaffee und Tee auszutauschen und weitere Eltern kennenzulernen.
         </p>
@@ -37,7 +48,7 @@
         <p>Die Krabbelgruppe findet generell alle 2 Wochen montags statt.</p>
         <p>Uhrzeit: 09:30 - 11:30 Uhr</p>
         <p>Ort: <a href="https://www.google.com/maps/search/?api=1&query=Kanalweg+13,+Toffen"
-                                             target="_blank">KiZe-Bistro, Kanalweg 13, Toffen</a></p>
+                   target="_blank">KiZe-Bistro, Kanalweg 13, Toffen</a></p>
         <p class="text-muted small mb-2">Termine zuletzt aktualisiert: 04.12.2024, unplansmässige Änderungen via WhatsApp-Gruppe</p>
 
         <ul>
@@ -48,7 +59,10 @@
             <li>10.03.2025</li>
             <li>24.03.2025</li>
             <li>07.04.2025</li>
-            <li><del>21.04.2025</del> - keine KG, Ostermontag</li>
+            <li>
+                <del>21.04.2025</del>
+                - keine KG, Ostermontag
+            </li>
             <li>05.05.2025</li>
             <li>19.05.2025</li>
             <li>02.06.2025</li>
@@ -64,7 +78,8 @@
         <p>
             Interessiert? Melde dich doch in unserer WhatsApp-Gruppe:
             <a href="https://chat.whatsapp.com/LjK3KSE7dVODs2TQNUyBh7" target="_blank"
-               class="btn btn-info">WhatsApp</a> oder per <a href="mailto:krabbelgruppetoffen@gmail.com" class="btn btn-info">Mail</a>
+               class="btn btn-info">WhatsApp</a> oder per <a href="mailto:krabbelgruppetoffen@gmail.com"
+                                                             class="btn btn-info">Mail</a>
         </p>
     </section>
 
@@ -154,7 +169,6 @@
 </main>
 <footer class="bg-secondary text-white text-center py-3 mt-5">
     <div class="container">
-        <p><small class="text-muted">Bildquellen: https://pixy.org/1402784/</small></p>
         <p>Die Krabbelgruppe ist eine freiwillige Initiative von Eltern in der Gemeinde Toffen, unterstützt durch die reformierte Kirche Belp-Belpberg-Toffen</p>
     </div>
 </footer>
